@@ -36,7 +36,7 @@ html, body{
                         font-weight: 700;
                         font-family: $Montserrat;
                         company{
-                            color: $default-color;
+                            color: $color;
                         }
                         &:after{
                             content: "";
@@ -53,8 +53,8 @@ html, body{
             }
             .phone {
                 .btn-call{
-                    background: #fff;
-                    color: $default-color;
+                    background: $bg-color;
+                    color: $color;
                     position: absolute;
                     height: 50px;
                     display: flex;
@@ -67,11 +67,11 @@ html, body{
                     font-size: 20px;
                     transition: .3s;
                     &:hover{
-                        background: $default-color;
+                        background: $color;
                         color: #fff;
                         &:before{
-                            color: $default-color;
-                            background: #fff;
+                            color: $color;
+                            background: $bg-color;
                         }
                     }
                     &:before{
@@ -83,7 +83,7 @@ html, body{
                         left: -2px;
                         height: 50px;
                         width: 60px;
-                        background: $default-color;
+                        background: $color;
                         color: #fff;
                         display: flex;
                         justify-content: center;
@@ -96,7 +96,7 @@ html, body{
             }
 			.book{
 				.btn-book{
-					background: $default-color;
+					background: $color;
                     color: #fff;
                     position: absolute;
                     height: 50px;
@@ -110,11 +110,11 @@ html, body{
                     font-size: 20px;
                     transition: .3s;
                     &:hover{
-                        background: #fff;
-                        color: $default-color;
+                        background: $bg-color;
+                        color: $color;
                         &:after{
                             color: #fff;
-                            background: $default-color;
+                            background: $color;
                         }
                     }
                     &:after{
@@ -126,8 +126,8 @@ html, body{
                         right: -2px;
                         height: 50px;
                         width: 60px;
-                        background: #fff;
-                        color: $default-color;
+                        background: $bg-color;
+                        color: $color;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -142,7 +142,7 @@ html, body{
     }
     &.news{
         height: $height/2;
-        background: $default-background; 
+        background: $bg-color;
     }
     &.app{
         
