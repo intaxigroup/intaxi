@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,400&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,700");
 html, body {
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 .content {
   height: 100vh;
@@ -8,11 +9,25 @@ html, body {
   .content.home {
     background: url("../img/bg/home.jpeg") no-repeat;
     background-size: cover; }
-
-h1.home {
-  text-align: center; }
-
-div.news {
-  height: 50vh; }
+    .content.home:before {
+      content: "";
+      display: block !important;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      top: 0;
+      left: 0; }
+    .content.home h1.home {
+      text-align: left;
+      color: #fff;
+      font-size: 70px;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif; }
+      .content.home h1.home company {
+        color: #aa55ce; }
+  .content.news {
+    height: 50vh;
+    background: yellow; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,22 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,400&subset=cyrillic');
 
+@import "modules/variables";
+@import "modules/colors";
+    
 html, body{
-    font-family: 'Oswald', sans-serif;
+    font-family: $Oswald;
 }
 .content {
-    height: 100vh;
+    height: $height;
     background: red;
     
     &.home{
         background: url("../img/bg/home.jpeg") no-repeat;
         background-size: cover;
+        &:before{
+            content: "";
+            display: block!important;
+            position: absolute;
+            width: $width;
+            height: $height;
+            background: rgba(0,0,0, 0.4);
+            top: 0;
+            left: 0;
+        }
+        h1{
+            &.home{
+                text-align: left;
+                color: #fff;
+                font-size: 70px;
+                font-weight: 700;
+                font-family: $Montserrat;
+                company{
+                    color: $default-color;
+                }
+                
+            }
+        }
     }
-}
-
-h1.home {
-    text-align: center;
-}
-
-div.news {
-    height: 50vh;
+    &.news{
+        height: $height/2;
+        background: $default-background;
+        
+    }
+    &.app{
+        
+    }
 }
