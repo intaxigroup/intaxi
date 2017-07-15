@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400&subset=cyrillic");
+html, body {
+  font-family: 'Oswald', sans-serif; }
+
+.content {
+  height: 100vh;
+  background: red; }
+  .content.home {
+    background: url("../img/bg/home.jpeg") no-repeat;
+    background-size: cover; }
+
+h1.home {
+  text-align: center; }
+
+div.news {
+  height: 50vh; }
+
+/*# sourceMappingURL=style.css.map */
