@@ -1,7 +1,7 @@
 
 @import "modules/variables";
 @import "modules/colors";
-    
+   
 html, body{
     font-family: $Oswald;
 }
@@ -18,28 +18,131 @@ html, body{
             position: absolute;
             width: $width;
             height: $height;
-            background: rgba(0,0,0, 0.4);
+            background: rgba(0,0,0, 0.5);
             top: 0;
             left: 0;
         }
-        h1{
-            &.home{
-                text-align: left;
-                color: #fff;
-                font-size: 70px;
-                font-weight: 700;
-                font-family: $Montserrat;
-                company{
-                    color: $default-color;
-                }
-                
-            }
+        .form{
+            text-align: center;
         }
+        .title{
+            .title-text{
+				height: 384px;
+                h1{
+                    &.home{
+                        text-align: left;
+                        color: #fff;
+                        font-size: 70px;
+                        font-weight: 700;
+                        font-family: $Montserrat;
+                        company{
+                            color: $default-color;
+                        }
+                        &:after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            left: 240px;
+                            top: -20px;
+                            border: 13px solid rgba(255,255,255, 0.1);
+                            width: $width/5;
+                            height: $height/4;
+                        }
+                    }
+                }
+            }
+            .phone {
+                .btn-call{
+                    background: #fff;
+                    color: $default-color;
+                    position: absolute;
+                    height: 50px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 300px;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    transition: .3s;
+                    &:hover{
+                        background: $default-color;
+                        color: #fff;
+                        &:before{
+                            color: $default-color;
+                            background: #fff;
+                        }
+                    }
+                    &:before{
+                        content: "\f095";
+                        font-family: $fa;
+                        font-size: 25px;
+                        position: absolute;
+                        top: -1px;
+                        left: -2px;
+                        height: 50px;
+                        width: 60px;
+                        background: $default-color;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        transition: .3s;
+                    }
+                }
+            }
+			.book{
+				.btn-book{
+					background: $default-color;
+                    color: #fff;
+                    position: absolute;
+                    height: 50px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 300px;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    transition: .3s;
+                    &:hover{
+                        background: #fff;
+                        color: $default-color;
+                        &:after{
+                            color: #fff;
+                            background: $default-color;
+                        }
+                    }
+                    &:after{
+                        content: "-10 \f295";
+                        font-family: $fa, $Oswald;
+                        font-size: 18px;
+                        position: absolute;
+                        top: -1px;
+                        right: -2px;
+                        height: 50px;
+                        width: 60px;
+                        background: #fff;
+                        color: $default-color;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        transition: .3s;
+                    }
+				}
+			}
+        }
+        
     }
     &.news{
         height: $height/2;
-        background: $default-background;
-        
+        background: $default-background; 
     }
     &.app{
         
