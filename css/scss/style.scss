@@ -5,9 +5,57 @@
 html, body{
     font-family: $Oswald;
 }
+a{
+	text-decoration: none!important;
+}
+
+.top{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	z-index: 999;
+	height: $height/5;
+	width: $width;
+	transition: .3s;
+	
+	a{
+		color: $bg-color;
+		font-size: 20px;
+		margin: 0 10px;
+		width: 120px;
+		text-align: center;
+		padding: 10px;
+		&:hover{
+			background: $color;
+			border-radius: 10px;
+		}
+		&.logo{
+			position: absolute;
+			z-index: 999;
+			background: url("../img/logo-white.png") no-repeat;
+			background-size: cover;
+			left: 50px;
+			width: 135px;
+			height: 35px;
+
+		}
+		
+	}
+}
+.fix-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, .7);
+	height: 55px;
+	transition: .3s;
+	
+}
 .content {
     height: $height;
-    background: red;
+    background: $bg-color;
     
     &.home{
         background: url("../img/bg/home.jpeg") no-repeat;
@@ -144,7 +192,20 @@ html, body{
         height: $height/2;
         background: $bg-color;
     }
+	&.payments{
+		height: $height/2;
+		text-align: center;
+		background: url("../img/bg/payments.jpg") no-repeat;
+		background-size: cover;
+		.pay{
+			text-align: center;
+		}
+	}
     &.app{
         
     }
+	&.company{
+		background: url("../img/bg/podjetja.jpg") no-repeat;
+		background-size: cover;
+	}
 }

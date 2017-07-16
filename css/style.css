@@ -4,9 +4,49 @@
 html, body {
   font-family: "Oswald", sans-serif; }
 
+a {
+  text-decoration: none !important; }
+
+.top {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  z-index: 999;
+  height: 20vh;
+  width: 100vw;
+  transition: .3s; }
+  .top a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    width: 120px;
+    text-align: center;
+    padding: 10px; }
+    .top a:hover {
+      background: #aa55ce;
+      border-radius: 10px; }
+    .top a.logo {
+      position: absolute;
+      z-index: 999;
+      background: url("../img/logo-white.png") no-repeat;
+      background-size: cover;
+      left: 50px;
+      width: 135px;
+      height: 35px; }
+
+.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 55px;
+  transition: .3s; }
+
 .content {
   height: 100vh;
-  background: red; }
+  background: #fff; }
   .content.home {
     background: url("../img/bg/home.jpeg") no-repeat;
     background-size: cover; }
@@ -117,5 +157,15 @@ html, body {
   .content.news {
     height: 50vh;
     background: #fff; }
+  .content.payments {
+    height: 50vh;
+    text-align: center;
+    background: url("../img/bg/payments.jpg") no-repeat;
+    background-size: cover; }
+    .content.payments .pay {
+      text-align: center; }
+  .content.company {
+    background: url("../img/bg/podjetja.jpg") no-repeat;
+    background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */
