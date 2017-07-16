@@ -158,10 +158,21 @@ a {
     height: 50vh;
     background: #fff; }
   .content.payments {
+    color: #fff;
     height: 50vh;
     text-align: center;
-    background: url("../img/bg/payments.jpg") no-repeat;
-    background-size: cover; }
+    background: url("../img/bg/payments.jpeg") no-repeat;
+    background-size: cover;
+    background-position: 0 -400px; }
+    .content.payments:before {
+      content: "";
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100vw;
+      height: 100vh; }
     .content.payments .pay {
       text-align: center; }
   .content.company {

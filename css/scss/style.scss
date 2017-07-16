@@ -193,10 +193,22 @@ a{
         background: $bg-color;
     }
 	&.payments{
+		color: #fff;
 		height: $height/2;
 		text-align: center;
-		background: url("../img/bg/payments.jpg") no-repeat;
+		background: url("../img/bg/payments.jpeg") no-repeat;
 		background-size: cover;
+		background-position: 0 -400px;
+		&:before{
+			content: "";
+			display: block!important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0, 0.5);
+			width: $width;
+			height: $height;
+		}
 		.pay{
 			text-align: center;
 		}
