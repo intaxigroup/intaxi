@@ -12,12 +12,20 @@
 </head>
 <body>
 	<div class="container-fluid">
+		
 		<div class="row align-items-center justify-content-md-center content home">
-            <!-- <div class="col-12">
+            <div class="col-12">
                 <div class="row align-items-center justify-content-md-center">
-                   
+                   <nav class="top" id="nav">
+                   		<a href="" class="logo"></a>
+						<a href="#home"> BOOK NOW</a>
+						<a href="#payments"> PLAČILA</a>
+						<a href="#app"> APLIKACIJA</a>
+						<a href="#company"> ZA PODJETJA</a>
+						<a href="#work"> ZAPOSLITEV</a>
+					</nav>
                 </div>
-            </div> -->
+            </div>
 			<div class="col-lg-6 hidden-md-down form">
                 <iframe src="https://secure.taxiid.nl/269a7/" name="I1" width="411" height="384" frameborder="0" scrolling="no"></iframe>
 			</div>
@@ -41,6 +49,52 @@
             <div class="col-3"> news block 2</div>
             <div class="col-3"> news block 3</div>
         </div>
+        <div class="row align-items-center justify-content-md-center content payments">
+        	<div class="col-12"> <h2> Izberi sam kako boš plačal :) a ni to cool?</h2></div>
+        	<div class="col-12">
+        		<div class="row align-items-center justify-content-md-center">
+					<div class="col-12 col-md-6">
+						<p> Če nimaš gotovine, lahko plačaš tudi z kartico ali Moneto!</p>
+						<p> Lahko tudi z ApplePay, SamsungPay ali BitCoin.</p>
+						<p> Vedno iščemo nove in enostavne načine za lažje plačilo!</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="row align-items-center justify-content-md-center">
+							<div class="col-4 pay"><img src="" alt="Gotovina" /></div>
+							<div class="col-4 pay"><img src="img/mastercard.png" alt="mastercard" /></div>
+							<div class="col-4 pay"><img src="img/maestro.png" alt="maestro" /></div>
+						</div>
+						<div class="row align-items-center justify-content-md-center">
+							<div class="col-4 pay"><img src="img/visa.png" alt="visa" /></div>
+							<div class="col-4 pay"><img src="img/moneta.png" alt="moneta" /></div>
+							<div class="col-4 pay"><img src="" alt="" /></div>
+						</div>
+						<div class="row align-items-center justify-content-md-center">
+							<div class="col-4 pay"><img src="" alt="ApplePay" /></div>
+							<div class="col-4 pay"><img src="" alt="SamsungPay" /></div>
+							<div class="col-4 pay"><img src="" alt="BitCoin" /></div>
+						</div>
+					</div>
+				</div>
+        	</div>
+        	
+        </div>
+        <div class="row align-items-center justify-content-md-center content app">
+        	<div class="col-12 col-md-6">
+        		
+        	</div>
+        	<div class="col-12 col-md-6">
+        		<h3>Enostavno in z fiksno ceno preko inTaxi Aplikacije</h3>
+        	</div>
+        </div>
+        <div class="row align-items-center justify-content-md-center content company" id="company">
+        	<div class="col-12 col-md-6">
+        		<h3>Najboljši sodelujejo z najboljšimi</h3>
+        	</div>
+        	<div class="col-12 col-md-6">
+        		
+        	</div>
+        </div>
     </div>
     
     
@@ -48,5 +102,11 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>
+		$(window).on("scroll touchmove", function () {
+			"use strict";
+			$('#nav').toggleClass('fix-nav', $(document).scrollTop() > 35);
+		});
+	</script>
 </body>
 </html>
