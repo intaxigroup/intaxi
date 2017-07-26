@@ -1,0 +1,14 @@
+@import "colors";
+
+.btn-read-more-light{
+	color: $white;
+	border: 1px solid $white;
+}
+.btn-read-more-dark{
+	color: $dark;
+	border: 1px solid $dark;
+	&:hover{
+		color: #000;
+		border: 1px solid #000;
+	}
+}

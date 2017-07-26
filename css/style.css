@@ -13,8 +13,23 @@
 :-ms-input-placeholder {
   color: #fff; }
 
+.btn-read-more-light {
+  color: #fff;
+  border: 1px solid #fff; }
+
+.btn-read-more-dark {
+  color: #c1c1c1;
+  border: 1px solid #c1c1c1; }
+  .btn-read-more-dark:hover {
+    color: #000;
+    border: 1px solid #000; }
+
 html, body {
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  outline: none; }
+
+:active, :hover, :visited, :focus {
+  outline: none !important; }
 
 a {
   text-decoration: none !important; }
@@ -194,6 +209,19 @@ a {
         height: auto; }
         .content.payments .pay img[src*="bitcoin"], .content.payments .pay img[src*="mobilepay"] {
           width: 150px; }
+  .content.app {
+    background: url("../img/bg/app.jpeg") no-repeat;
+    background-size: cover; }
+    .content.app .app-text p {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+      font-family: "Oswald", sans-serif;
+      font-stretch: expanded;
+      font-size: 16px;
+      width: 80%;
+      margin: 0 auto; }
   .content.company {
     background: url("../img/bg/podjetja.jpg") no-repeat;
     background-size: cover;
@@ -298,9 +326,117 @@ input::-o-inner-spin-button {
   display: block;
   text-align: center;
   content: counter(gallery-cell);
-  content: "";
   line-height: 80px;
   font-size: 80px;
   color: white; }
+
+.telegraph {
+  width: 100%;
+  height: 100%; }
+
+.video {
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+
+.iphone-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-aligne: center;
+  -webkit-transition: .3s;
+  width: 282px;
+  height: 500px; }
+
+.iphone-video:before {
+  content: "";
+  background: url(../img/iphone.png) no-repeat;
+  width: 326px;
+  height: 650px;
+  position: absolute; }
+
+.iphone-video:after {
+  height: 510px;
+  width: 282px;
+  content: "";
+  position: absolute;
+  z-index: 10; }
+
+.iphone-video:hover:after {
+  background: rgba(0, 0, 0, 0.4); }
+
+.iphone-video:hover .play,
+.iphone-video:hover .pause {
+  z-index: 20 !important;
+  display: flex;
+  color: #fff; }
+
+.play,
+.pause {
+  position: relative;
+  top: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  margin: 0px auto;
+  font-family: FontAwesome;
+  font-size: 50px;
+  border: none;
+  background: transparent;
+  color: transparent; }
+
+.play:before {
+  content: "\f04b"; }
+
+.pause:before {
+  content: "\f04c"; }
+
+button.play2,
+button.pause2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #fff;
+  color: #aa53cc;
+  border: none;
+  border-radius: 10px;
+  width: 180px;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  height: 30px;
+  margin: 10px 0;
+  font-weight: 600; }
+
+button.play2:before,
+button.pause2:before {
+  font-family: FontAwesome;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background: #aa53cc;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+button.play2:before {
+  content: "\f04b"; }
+
+button.pause2:before {
+  content: "\f04c"; }
+
+.iphone-video video {
+  position: relative;
+  margin-bottom: -54px; }
 
 /*# sourceMappingURL=style.css.map */
