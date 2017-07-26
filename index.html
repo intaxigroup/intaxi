@@ -12,12 +12,20 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row align-items-center justify-content-md-center content home">
-            <!-- <div class="col-12">
+		
+		<div class="row align-items-center justify-content-md-center content home" id="home">
+            <div class="col-12">
                 <div class="row align-items-center justify-content-md-center">
-                   
+                   <nav class="top" id="nav">
+                   		<a href="" class="logo"></a>
+						<a href="#home"> BOOK NOW</a>
+						<a href="#payments"> PLAČILA</a>
+						<a href="#app"> APLIKACIJA</a>
+						<a href="#company"> ZA PODJETJA</a>
+						<a href="#work"> ZAPOSLITEV</a>
+					</nav>
                 </div>
-            </div> -->
+            </div>
 			<div class="col-lg-6 hidden-md-down form">
                 <iframe src="https://secure.taxiid.nl/269a7/" name="I1" width="411" height="384" frameborder="0" scrolling="no"></iframe>
 			</div>
@@ -37,16 +45,78 @@
 			</div>
 		</div>
         <div class="row align-items-center justify-content-md-center content news">
-            <div class="col-3"> news block 1</div>
+            <div class="col-3">
+            	<iframe src="http://telegra.ph/inTaxi-Ljubljana-07-26.html" frameborder="0" class="telegraph"></iframe>
+            </div>
             <div class="col-3"> news block 2</div>
             <div class="col-3"> news block 3</div>
         </div>
+        <div class="row align-items-center justify-content-md-center content payments" id="payments">
+        	<div class="col-12"> <h2> Izberi sam kako boš plačal :) </h2></div>
+        	<div class="col-12">
+        		<div class="row align-items-center justify-content-md-center">
+					<div class="col-12 col-md-6 hidden-md-down form">
+						<p> Če nimaš gotovine plačaj z kartico ali Moneto!</p>
+						<p> Lahko tudi z ApplePay, SamsungPay in BitCoin.</p>
+						<p> Vedno iščemo nove rešitve za enostavno plačilo!</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="row align-items-center justify-content-md-center">
+							<div class="col-4 pay"><img src="img/mastercard.png" alt="mastercard" /></div>
+							<div class="col-4 pay"><img src="img/maestro.png" alt="maestro" /></div>
+							<div class="col-4 pay"><img src="img/visa.png" alt="visa" /></div>
+						</div>
+						<div class="row align-items-center justify-content-md-center">
+							<div class="col-4 pay"><img src="img/moneta.png" alt="moneta" /></div>
+							<div class="col-4 pay"><img src="img/bitcoin.png" alt="BitCoin" /></div>
+							<div class="col-4 pay"><img src="img/mobilepay.png" alt="ApplePay" /></div>
+						</div>
+					</div>
+				</div>
+        	</div>
+        	
+        </div>
+        <div class="row align-items-center justify-content-md-center content app">
+        	<div class="col-12 col-md-6">
+        		<a class="twitter-timeline" data-width="1200" data-height="500" data-cards="hidden" data-theme="light" data-link-color="#981CEB" href="https://twitter.com/InIntaxi">Tweets by InIntaxi</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        	</div>
+        	<div class="col-12 col-md-6">
+        		<h3>Enostavno in z fiksno ceno preko inTaxi Aplikacije</h3>
+        		<a href="intaxi-za-podjetja.html" class="btn btn-read-more-dark"> PREBERI VEČ <i class="fa fa-arrow-right"></i></a>
+        	</div>
+        </div>
+        <div class="row align-items-center justify-content-md-center content company" id="company">
+        	<div class="col-12 col-md-4">
+					<h3>Najboljši sodelujejo z najboljšimi</h3>
+        	</div>
+        	<div class="col-12 col-md-6">
+        		<a href="intaxi-za-podjetja.html" class="btn btn-read-more-light"> PREBERI VEČ <i class="fa fa-arrow-right"></i></a>
+        	</div>
+        </div>
     </div>
+    <footer>
+		<div class="row">
+			<div class="col-12"> SOCIAL </div>
+		</div>
+   		<div class="row">
+   			<div class="col-12 col-md-6"> 1 block</div>
+   			<div class="col-12 col-md-6"> 2 block</div>
+   		</div>
+   		<div class="row">
+   			<div class="col-12"> COPYRIGHT</div>
+   		</div>
+    </footer>
     
     
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>
+		$(window).on("scroll touchmove", function () {
+			"use strict";
+			$('#nav').toggleClass('fix-nav', $(document).scrollTop() > 35);
+		});
+	</script>
 </body>
 </html>

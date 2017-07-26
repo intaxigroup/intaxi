@@ -1,13 +1,66 @@
 
 @import "modules/variables";
 @import "modules/colors";
+@import "modules/buttons";
    
 html, body{
     font-family: $Oswald;
+	outline: none;
+}
+:active, :hover, :visited, :focus {
+	outline: none!important;
+}
+a{
+	text-decoration: none!important;
+}
+
+.top{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	z-index: 999;
+	height: $height/5;
+	width: $width;
+	transition: .3s;
+	
+	a{
+		color: $bg-color;
+		font-size: 20px;
+		margin: 0 10px;
+		width: 120px;
+		text-align: center;
+		padding: 10px;
+		&:hover{
+			background: $color;
+			border-radius: 10px;
+		}
+		&.logo{
+			position: absolute;
+			z-index: 999;
+			background: url("../img/logo-white.png") no-repeat;
+			background-size: cover;
+			left: 50px;
+			width: 135px;
+			height: 35px;
+
+		}
+		
+	}
+}
+.fix-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, .7);
+	height: 55px;
+	transition: .3s;
+	
 }
 .content {
     height: $height;
-    background: red;
+    background: $bg-color;
     
     &.home{
         background: url("../img/bg/home.jpeg") no-repeat;
@@ -144,7 +197,292 @@ html, body{
         height: $height/2;
         background: $bg-color;
     }
+	&.payments{
+		color: #fff;
+		height: $height/2;
+		text-align: center;
+		background: url("../img/bg/payments.jpeg") no-repeat;
+		background-size: cover;
+		background-position: 0 -400px;
+		position: relative;
+		font-size: 20px;
+		&:before{
+			content: "";
+			display: block!important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0, 0.5);
+			width: $width;
+			height: $height/2;
+		}
+		.pay{
+			text-align: center;
+			img{
+				width: 100px;
+				height: auto;
+				&[src*="bitcoin"],
+				&[src*="mobilepay"]{
+					width: 150px;
+				}
+			}
+		}
+	}
     &.app{
-        
+        background: url("../img/bg/app.jpeg") no-repeat;
+		background-size: cover;
+		.app-text{
+			
+			& p{
+				color: $white;
+				background: rgba(0,0,0, 0.5);
+				padding: 15px;
+				border-radius: 10px;
+				font-family: $Oswald;
+				font-stretch: expanded;
+				font-size: 17px;
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+		.store{
+			text-align: center;
+		}
+		button {
+			font-size: 16px;
+		}
     }
+	&.company{
+		background: url("../img/bg/podjetja.jpg") no-repeat;
+		background-size: cover;
+		color: #fff;
+		font-family: $Montserrat;
+		h3{
+			text-align: left;
+			text-transform: uppercase;
+			font-size: 4vw;
+			font-weight: 700;
+			&.vw{
+				text-align: center;
+			}
+		}
+		p{
+			display: block;
+			margin-left: 100px;
+			font-size: 18px;
+		}
+		@include placeholder {
+			color: #fff;
+			font-family: $Montserrat;
+			font-weight: 100;
+		}
+		form{
+			width: 500px;
+			margin: 0 auto;
+			background: rgba(255, 255, 255, 0.15);
+			padding: 35px 15px 15px 50px;
+			text-align: left;
+		}
+		form input{
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid #fff;
+			width: 400px;
+			/* color: #aa53ce; */
+			color: #fff;
+			font-size: 18px;
+			margin: 10px;
+			font-family: $Montserrat;
+			font-weight: 100;
+		}
+
+		form input:focus,
+		form textarea:focus{
+			outline: none;
+		}
+
+		form textarea{
+			background: rgba(255, 255, 255, 0.1);
+			border: none;
+			width: 400px;
+		}
+		form input[type=submit]{
+			background: #df04ff;
+			border: none;
+			font-weight: 700;
+			color: #fff;
+			padding: 15px;
+		}
+		form input[type=submit]:hover{
+			background: #aa04ff;
+		}
+	}
+}
+
+
+/* ALL */
+/* arrows input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+}
+input::-moz-outer-spin-button,
+input::-moz-inner-spin-button{
+	-moz-appearance: none;
+}
+input::-o-outer-spin-button,
+input::-o-inner-spin-button {
+   -o-appearance: none;
+}
+
+.gallery{
+	width: 100vw;
+	background: rgba(255,255,255, 1);
+	margin: 0;
+	margin: 0 -15px -20px;
+}
+.gallery-cell {
+	width: 20%;
+ 	height: 100px;
+ 	margin: 0 25px;
+ 	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  counter-increment: gallery-cell;
+	img{
+		&.img-h{
+			height: 100%;
+		}
+		&.img-w{
+			width: 100%;
+		}
+	}
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 80px;
+  font-size: 80px;
+  color: white;
+}
+
+.telegraph{
+	width: 100%;
+	height: 100%;
+}
+
+.video{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.iphone-video {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-aligne: center;
+	-webkit-transition: .3s;
+	width: 282px;
+	height: 500px;
+
+}
+.iphone-video:before {
+	content: "";
+	background: url(../img/iphone.png) no-repeat;
+	width: 326px;
+	height: 650px;
+	position: absolute;
+}
+.iphone-video:after {
+	height: 510px;
+	width: 282px;
+	content: "";
+	position: absolute;
+	z-index: 10;
+}
+.iphone-video:hover:after {
+	background: rgba(0,0,0, 0.4);
+}
+
+.iphone-video:hover .play,
+.iphone-video:hover .pause{
+	z-index: 20!important;
+	display: flex;
+	color: #fff;
+}
+.play,
+.pause{
+	position: relative;
+	top: -200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	margin: 0px auto;
+	font-family: FontAwesome;
+	font-size: 50px;
+	border: none;
+	background: transparent;
+	color: transparent;
+}
+
+.play:before {
+	content: "\f04b";
+}
+.pause:before{
+	content: "\f04c";
+}
+button.play2,
+button.pause2 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background: #fff;
+	color: #aa53cc;
+	border:  none;
+	border-radius:  10px;
+	width: 180px;
+	padding: 0 20px;
+	text-align: center;
+	position: relative;
+	height: 30px;
+	margin: 10px 0;
+	font-weight: 600;
+}
+
+button.play2:before,
+button.pause2:before{
+	font-family: FontAwesome;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	background: #aa53cc;
+	position: absolute;
+	top: 0;
+	left: -1px;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+button.play2:before{
+	content: "\f04b";
+}
+button.pause2:before{
+	content: "\f04c";
+}
+.iphone-video video {
+	position: relative;
+	margin-bottom: -54px;
 }

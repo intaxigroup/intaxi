@@ -7,3 +7,14 @@ $height: 100vh;
 $Oswald: 'Oswald', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
 $fa: 'FontAwesome';
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@include placeholder {
+    color: #fff;
+}
