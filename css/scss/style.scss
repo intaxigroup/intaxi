@@ -240,13 +240,16 @@ a{
 				border-radius: 10px;
 				font-family: $Oswald;
 				font-stretch: expanded;
-				font-size: 16px;
+				font-size: 17px;
 				width: 80%;
 				margin: 0 auto;
 			}
 		}
 		.store{
 			text-align: center;
+		}
+		button {
+			font-size: 16px;
 		}
     }
 	&.company{
