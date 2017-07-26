@@ -199,6 +199,8 @@ a{
 		background: url("../img/bg/payments.jpeg") no-repeat;
 		background-size: cover;
 		background-position: 0 -400px;
+		position: relative;
+		font-size: 20px;
 		&:before{
 			content: "";
 			display: block!important;
@@ -207,10 +209,18 @@ a{
 			left: 0;
 			background: rgba(0,0,0, 0.5);
 			width: $width;
-			height: $height;
+			height: $height/2;
 		}
 		.pay{
 			text-align: center;
+			img{
+				width: 100px;
+				height: auto;
+				&[src*="bitcoin"],
+				&[src*="mobilepay"]{
+					width: 150px;
+				}
+			}
 		}
 	}
     &.app{

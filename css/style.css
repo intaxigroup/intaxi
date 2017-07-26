@@ -163,7 +163,9 @@ a {
     text-align: center;
     background: url("../img/bg/payments.jpeg") no-repeat;
     background-size: cover;
-    background-position: 0 -400px; }
+    background-position: 0 -400px;
+    position: relative;
+    font-size: 20px; }
     .content.payments:before {
       content: "";
       display: block !important;
@@ -172,9 +174,14 @@ a {
       left: 0;
       background: rgba(0, 0, 0, 0.5);
       width: 100vw;
-      height: 100vh; }
+      height: 50vh; }
     .content.payments .pay {
       text-align: center; }
+      .content.payments .pay img {
+        width: 100px;
+        height: auto; }
+        .content.payments .pay img[src*="bitcoin"], .content.payments .pay img[src*="mobilepay"] {
+          width: 150px; }
   .content.company {
     background: url("../img/bg/podjetja.jpg") no-repeat;
     background-size: cover; }
