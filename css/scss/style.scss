@@ -13,7 +13,16 @@ html, body{
 a{
 	text-decoration: none!important;
 }
-
+h3{
+	font-size: 4em;
+	font-weight: 700;
+	&.purple-title{
+		color: #fff;
+		span{
+			color: #aa55cc;
+		}
+	}
+}
 .top{
 	position: absolute;
 	display: flex;
@@ -46,7 +55,40 @@ a{
 			height: 35px;
 
 		}
-		
+	}
+	.phone-all{
+		position: absolute;
+		right: 30px;
+
+		a{
+			&.whatsapp{
+				background: url("../img/whatsapp.png") no-repeat;
+				display: inline-block;
+				background-size: 25px 25px;
+				width: 25px;
+				height: 25px;
+				position: relative;
+				top: 4px;
+			}
+			&.viber{
+				background: url("../img/viber.png") no-repeat;
+				display: inline-block;
+				background-size: 25px 25px;
+				width: 25px;
+				height: 25px;
+				position: relative;
+				top: 4px;
+			}
+			i{
+				font-size: 25px;
+				color: #aa55cc;
+			}
+			&:hover{
+				i{
+					color: $white;
+				}
+			}
+		}		
 	}
 }
 .fix-nav{
@@ -231,25 +273,30 @@ a{
     &.app{
         background: url("../img/bg/app.jpeg") no-repeat;
 		background-size: cover;
+		color: $white;
+
+		&.app-home{
+			p{
+				font-size: 22px;
+			}
+		}
 		.app-text{
-			
-			& p{
-				color: $white;
-				background: rgba(0,0,0, 0.5);
-				padding: 15px;
-				border-radius: 10px;
-				font-family: $Oswald;
-				font-stretch: expanded;
-				font-size: 17px;
-				width: 80%;
-				margin: 0 auto;
+			color: $white;
+			background: $transparent-dark;
+			border-radius: 10px;
+			padding: 15px;
+			ol{
+				margin: 10px 0;
+				li{
+					margin: 5px 0;
+				}
 			}
 		}
 		.store{
 			text-align: center;
 		}
 		button {
-			font-size: 16px;
+			
 		}
     }
 	&.company{
@@ -315,6 +362,14 @@ a{
 		}
 		form input[type=submit]:hover{
 			background: #aa04ff;
+		}
+	}
+	&.zaposlitev{
+		.zaposlitev-text{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 		}
 	}
 }
