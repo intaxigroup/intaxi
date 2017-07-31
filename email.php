@@ -14,7 +14,6 @@ if(isset($_POST['email'])) {
         die();
     }
  
- 
     // validation expected data exists
     if(!isset($_POST['company_name']) ||
         !isset($_POST['company_vat']) ||
