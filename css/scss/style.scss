@@ -170,7 +170,7 @@ h3{
                         }
                     }
                     &:before{
-                        content: "\f095";
+                        content: "\f095"; 
                         font-family: $fa;
                         font-size: 25px;
                         position: absolute;
@@ -371,6 +371,14 @@ h3{
 			align-items: center;
 			flex-direction: column;
 		}
+	}
+	&.akademija-top{
+		background: url("../img/bg/akademija.jpeg") no-repeat;
+		background-size: cover;
+		height: $height/2;
+	}
+	&.akademija{
+		height: $height/2;
 	}
 }
 
