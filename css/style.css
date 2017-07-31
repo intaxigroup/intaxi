@@ -18,8 +18,8 @@
   border: 1px solid #fff; }
 
 .btn-read-more-dark {
-  color: #c1c1c1;
-  border: 1px solid #c1c1c1; }
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c; }
   .btn-read-more-dark:hover {
     color: #000;
     border: 1px solid #000; }
@@ -33,6 +33,14 @@ html, body {
 
 a {
   text-decoration: none !important; }
+
+h3 {
+  font-size: 4em;
+  font-weight: 700; }
+  h3.purple-title {
+    color: #fff; }
+    h3.purple-title span {
+      color: #aa55cc; }
 
 .top {
   position: absolute;
@@ -62,6 +70,30 @@ a {
       left: 50px;
       width: 135px;
       height: 35px; }
+  .top .phone-all {
+    position: absolute;
+    right: 30px; }
+    .top .phone-all a.whatsapp {
+      background: url("../img/whatsapp.png") no-repeat;
+      display: inline-block;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+      position: relative;
+      top: 4px; }
+    .top .phone-all a.viber {
+      background: url("../img/viber.png") no-repeat;
+      display: inline-block;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+      position: relative;
+      top: 4px; }
+    .top .phone-all a i {
+      font-size: 25px;
+      color: #aa55cc; }
+    .top .phone-all a:hover i {
+      color: #fff; }
 
 .fix-nav {
   position: fixed;
@@ -211,21 +243,21 @@ a {
           width: 150px; }
   .content.app {
     background: url("../img/bg/app.jpeg") no-repeat;
-    background-size: cover; }
-    .content.app .app-text p {
+    background-size: cover;
+    color: #fff; }
+    .content.app.app-home p {
+      font-size: 22px; }
+    .content.app .app-text {
       color: #fff;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 15px;
+      background: rgba(0, 0, 0, 0.3);
       border-radius: 10px;
-      font-family: "Oswald", sans-serif;
-      font-stretch: expanded;
-      font-size: 17px;
-      width: 80%;
-      margin: 0 auto; }
+      padding: 15px; }
+      .content.app .app-text ol {
+        margin: 10px 0; }
+        .content.app .app-text ol li {
+          margin: 5px 0; }
     .content.app .store {
       text-align: center; }
-    .content.app button {
-      font-size: 16px; }
   .content.company {
     background: url("../img/bg/podjetja.jpg") no-repeat;
     background-size: cover;
@@ -290,6 +322,11 @@ a {
       padding: 15px; }
     .content.company form input[type=submit]:hover {
       background: #aa04ff; }
+  .content.zaposlitev .zaposlitev-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
 
 /* ALL */
 /* arrows input number */
