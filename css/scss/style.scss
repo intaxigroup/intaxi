@@ -100,14 +100,17 @@ h3{
 	transition: .3s;
 	
 }
-
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
 .content {
     height: $height;
-    background: $bg-color;
+    /*background: $bg-color;*/
     
     &.home{
-        background: url("../img/bg/home.jpeg") no-repeat;
-        background-size: cover;
+        /*background: url("../img/bg/home.jpeg") no-repeat;
+        background-size: cover;*/
 		height: 90vh;
         &:before{
             content: "";
@@ -273,8 +276,8 @@ h3{
 		}
 	}
     &.app{
-        background: url("../img/bg/app.jpeg") no-repeat;
-		background-size: cover;
+        /*background: url("../img/bg/app.jpeg") no-repeat;
+		background-size: cover;*/
 		color: $white;
 
 		&.app-home{

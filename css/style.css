@@ -118,12 +118,16 @@ h3 {
   height: 55px;
   transition: .3s; }
 
+.parallax-window {
+  min-height: 400px;
+  background: transparent; }
+
 .content {
   height: 100vh;
-  background: #fff; }
+  /*background: $bg-color;*/ }
   .content.home {
-    background: url("../img/bg/home.jpeg") no-repeat;
-    background-size: cover;
+    /*background: url("../img/bg/home.jpeg") no-repeat;
+        background-size: cover;*/
     height: 90vh; }
     .content.home:before {
       content: "";
@@ -258,8 +262,8 @@ h3 {
         .content.payments .pay img[src*="bitcoin"], .content.payments .pay img[src*="mobilepay"] {
           width: 150px; }
   .content.app {
-    background: url("../img/bg/app.jpeg") no-repeat;
-    background-size: cover;
+    /*background: url("../img/bg/app.jpeg") no-repeat;
+		background-size: cover;*/
     color: #fff; }
     .content.app.app-home p {
       font-size: 22px; }
