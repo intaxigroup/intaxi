@@ -1,0 +1,174 @@
+$nav-bg: #2b3033;
+$blue: #5fc7ea;
+$red: #e68568;
+$yellow: #e6d068;
+$green: #68e6ac;
+$ease: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$content-animation: scale(0.7) rotateX(-230deg);
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100px;
+  backface-visibility: hidden;
+  
+  &__list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 75vh;
+    transform: translate(0, -100%);
+    transition: $ease;
+    
+    &--active {
+      transform: translate(0, 0);
+    }
+  }
+  
+  &__item {
+    flex: 1;
+    position: relative;
+  }
+  
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    font-size: 24px;
+    background: $nav-bg;
+    transition: $ease;
+    
+    &:hover {
+      background: mix(black, $nav-bg, 10);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    width: 70px;
+    
+    &__list {
+      height: 80vh;
+    }
+  }
+}
+
+.burger {
+  height: 15vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: $nav-bg;
+  cursor: pointer;
+  transition: $ease;
+  
+  &:hover {
+    background: mix(black, $nav-bg, 10);
+  }
+  
+  &__patty {
+    position: relative;
+    height: 2px;
+    width: 40px;
+    background: white;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+  }
+  
+  &__patty,
+  &__patty:before,
+  &__patty:after {
+    will-change: transform;
+    transition: $ease;
+  }
+  
+  &--active {
+    .burger__patty {
+      transform: rotate(90deg);
+      &:before {
+        transform: rotate(-45deg) translate(-7px,-7px) scaleX(0.7);
+      }
+      
+      &:after {
+        transform: rotate(45deg) translate(-7px,7px) scaleX(0.7);
+      }
+    }
+  }
+  
+  @media (max-width: 640px) {
+    height: 10vh;
+    
+    &__patty {
+      transform: scale(0.8);
+    }
+    
+    &--active {
+      .burger__patty {
+        transform: scale(0.8) rotate(90deg);
+      }
+    }
+  }
+}
+.c-blue {
+  color: $blue;
+}
+
+.c-red {
+  color: $red;
+}
+
+.c-green {
+  color: $green;
+}
+
+.c-yellow {
+  color: $yellow;
+}
+
+.b-blue {
+  background: $blue;
+}
+
+.b-red {
+  background: $red;
+}
+
+.b-green {
+  background: $green;
+}
+
+.b-yellow {
+  background: $yellow;
+}

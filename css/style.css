@@ -123,7 +123,8 @@ h3 {
   background: #fff; }
   .content.home {
     background: url("../img/bg/home.jpeg") no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    height: 90vh; }
     .content.home:before {
       content: "";
       display: block !important;
@@ -355,15 +356,6 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100vw; }
-  footer .social {
-    text-align: center;
-    background: #1c1c1c;
-    color: #fff;
-    width: 100vw;
-    height: 20vh; }
-    footer .social a {
-      color: #fff;
-      font-size: 3.5vh; }
   footer .messengers {
     width: 100vw;
     text-align: center;
@@ -528,22 +520,60 @@ button.pause2:before {
   position: relative;
   margin-bottom: -54px; }
 
+/* ------------------------ ---------------------SOCIAL ROW  ----------------------------- */
+.social {
+  text-align: center;
+  background: #1c1c1c;
+  color: #fff;
+  width: 100vw;
+  height: 10vh; }
+  .social a {
+    color: #fff;
+    font-size: 3.5vh;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s; }
+    .social a.social__facebook {
+      background: #3b5998; }
+      .social a.social__facebook:hover {
+        background: #fff;
+        color: #3b5998; }
+    .social a.social__instagram {
+      background: #fbad50; }
+      .social a.social__instagram:hover {
+        background: #fff;
+        color: #fbad50; }
+    .social a.social__twitter {
+      background: #00b6f1; }
+      .social a.social__twitter:hover {
+        background: #fff;
+        color: #00b6f1; }
+    .social a.social__google-plus {
+      background: #dd4b39; }
+      .social a.social__google-plus:hover {
+        background: #fff;
+        color: #dd4b39; }
+
+/* ------------------------ ---------------------SOCIAL ROW  ----------------------------- */
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 5vh 0; }
+  margin: 0; }
 
 .nav {
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  width: 85px;
+  width: 100px;
   backface-visibility: hidden; }
   .nav__list {
     display: flex;
     flex-flow: column wrap;
-    height: 100vh;
+    height: 75vh;
     transform: translate(0, -100%);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .nav__list--active {
@@ -570,20 +600,20 @@ ul {
     .nav {
       width: 70px; }
       .nav__list {
-        height: 90vh; } }
+        height: 80vh; } }
 
 .burger {
-  height: 45px;
-  width: 45px;
+  height: 15vh;
   position: relative;
-  top: 10px;
-  left: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
+  background: #2b3033;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .burger:hover {
+    background: #272b2e; }
   .burger__patty {
     position: relative;
     height: 2px;
