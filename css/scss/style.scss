@@ -100,6 +100,7 @@ h3{
 	transition: .3s;
 	
 }
+
 .content {
     height: $height;
     background: $bg-color;
@@ -170,7 +171,7 @@ h3{
                         }
                     }
                     &:before{
-                        content: "\f095";
+                        content: "\f095"; 
                         font-family: $fa;
                         font-size: 25px;
                         position: absolute;
@@ -372,8 +373,47 @@ h3{
 			flex-direction: column;
 		}
 	}
+	&.akademija-top{
+		background: url("../img/bg/akademija.jpeg") no-repeat;
+		background-size: cover;
+		height: 60vh;
+	}
+	&.akademija{
+		height: 40vh;
+	}
 }
-
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: $width;
+	.social{
+		text-align: center;
+		background: $dark;
+		color: $white;
+		width: $width;
+		height: 20vh;
+		a{
+			color: $white;
+			font-size: 3.5vh;
+		}
+	}
+	.messengers{
+		width: $width;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.copyright{
+		background: $dark;
+		color: $white;
+		text-align: center;
+		font-family: $Montserrat;
+		font-weight: 100;
+		width: $width;
+	
+	}
+}
 
 /* ALL */
 /* arrows input number */
@@ -540,4 +580,176 @@ button.pause2:before{
 .iphone-video video {
 	position: relative;
 	margin-bottom: -54px;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5vh 0;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  right: 0;
+  width: 85px;
+  backface-visibility: hidden;
+
+  
+  &__list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    transform: translate(0, -100%);
+    transition: $ease;
+    
+    &--active {
+      transform: translate(0, 0);
+    }
+  }
+  
+  &__item {
+    flex: 1;
+    position: relative;
+  }
+  
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    font-size: 24px;
+    background: $nav-bg;
+    transition: $ease;
+    
+    &:hover {
+      background: mix(black, $nav-bg, 10);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    width: 70px;
+    
+    &__list {
+      height: 90vh;
+    }
+  }
+}
+
+.burger {
+  height: 45px;
+	width: 45px;
+  position: relative;
+	top: 10px;
+	left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  
+  cursor: pointer;
+  transition: $ease;
+  
+
+  
+  &__patty {
+    position: relative;
+    height: 2px;
+    width: 40px;
+    background: white;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+  }
+  
+  &__patty,
+  &__patty:before,
+  &__patty:after {
+    will-change: transform;
+    transition: $ease;
+  }
+  
+  &--active {
+    .burger__patty {
+      transform: rotate(90deg);
+      &:before {
+        transform: rotate(-45deg) translate(-7px,-7px) scaleX(0.7);
+      }
+      
+      &:after {
+        transform: rotate(45deg) translate(-7px,7px) scaleX(0.7);
+      }
+    }
+  }
+  
+  @media (max-width: 640px) {
+    height: 10vh;
+    
+    &__patty {
+      transform: scale(0.8);
+    }
+    
+    &--active {
+      .burger__patty {
+        transform: scale(0.8) rotate(90deg);
+      }
+    }
+  }
+}
+
+.c-blue {
+  color: $blue;
+}
+
+.c-red {
+  color: $red;
+}
+
+.c-green {
+  color: $green;
+}
+
+.c-yellow {
+  color: $yellow;
+}
+
+.b-blue {
+  background: $blue;
+}
+
+.b-red {
+  background: $red;
+}
+
+.b-green {
+  background: $green;
+}
+
+.b-yellow {
+  background: $yellow;
 }

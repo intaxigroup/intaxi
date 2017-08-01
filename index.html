@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Document</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Poceni taxi Ljubljana? - inTaxi Ljubljana, prijazna, hitra, poceni taxi služba v vašem mestu! Fixna cena pri naročanju prek aplikacije!">
+	<meta name="google-site-verification" content="RfTvPezq1-8IPAzSy8M47CsidJdA9Mgm-9JOisjgHus" />
+	<link rel="canonical" href="http://www.intaxi.si/">
+	<link rel="shortcut icon" href="http://intaxi.si/img/logo.png">
+
+	<title>inTaxi Ljubljana! Naroči poceni taxi v Ljubljani z fiksno ceno!</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<style>
@@ -11,25 +17,48 @@
     </style>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid parallax">
 		
 		<div class="row align-items-center justify-content-md-center content home" id="home">
             <div class="col-12">
                 <div class="row align-items-center justify-content-md-center">
-                   <nav class="top" id="nav">
+                   <nav class="top hidden-md-down" id="nav">
                    		<a href="" class="logo"></a>
 						<a href="#home"> BOOK NOW</a>
-						<a href="#payments"> PLAČILA</a>
+						<a href="intaxi-akademija.html"> AKADEMIJA</a>
 						<a href="#app"> APLIKACIJA</a>
 						<a href="#company"> ZA PODJETJA</a>
 						<a href="intaxi-zaposlitev.html"> ZAPOSLITEV</a>
 						<div class="phone-all">
 							<a href="tel:+38631402020" class="phone">  <i class="fa fa-mobile"></i>  031402020</a>
-							<a href="" class="whatsapp"></a>
-							<a href="" class="viber"></a>
+							<a href="https://api.whatsapp.com/send?phone=38631402020&text=Hello!%20I%20need%20a%20taxi%20now%20:)" class="whatsapp"></a>
+							<a href="viber://add?number=38631402020" class="viber"></a>
 						</div>
 						
 					</nav>
+               <nav class="nav hidden-lg-up">
+				  <div class="burger">
+					<div class="burger__patty"></div>
+				  </div>
+
+				  <ul class="nav__list">
+					<li class="nav__item">
+					  <a href="#home" class="nav__link c-blue"><i class="fa fa-home"></i></a>
+					</li>
+					<li class="nav__item">
+					  <a href="intaxi-akademija.html" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap"></i></a>
+					</li>
+					<li class="nav__item">
+					  <a href="#app" class="nav__link c-red"><i class="fa fa-download"></i></a>
+					</li>
+					<li class="nav__item">
+					  <a href="#company" class="nav__link c-green"><i class="fa fa-paper-plane"></i></a>
+					</li>
+					<li class="nav__item">
+					  <a href="intaxi-zaposlitev.html" class="nav__link c-green"><i class="fa fa-taxi"></i></a>
+					</li>
+				  </ul>
+				</nav>
                 </div>
             </div>
 			<div class="col-lg-6 hidden-md-down form">
@@ -57,7 +86,8 @@
             <div class="col-3"> news block 2</div>
             <div class="col-3"> news block 3</div>
         </div>
-        <div class="row align-items-center justify-content-md-center content payments" id="payments">
+        
+        <div class="row align-items-center justify-content-md-center content payments" hidden>
         	<div class="col-12"> <h2> Izberi sam kako boš plačal :) </h2></div>
         	<div class="col-12">
         		<div class="row align-items-center justify-content-md-center">
@@ -100,24 +130,35 @@
         	</div>
         </div>
     </div>
-    <footer hidden>
+    <footer>
 		<div class="row">
-			<div class="col-12"> SOCIAL </div>
+			<div class="col-12">
+				<div class="row align-items-center justify-content-md-center social">
+					<div class="col-3"> <a href="http://facebook.com/intaxi"> <i class="fa fa-facebook"></i> </a> </div>
+					<div class="col-3"> <a href="https://www.instagram.com/intaxi_ljubljana/"> <i class="fa fa-instagram"></i> </a> </div>
+					<div class="col-3"> <a href="https://twitter.com/InIntaxi"> <i class="fa fa-twitter"></i> </a> </div>
+					<div class="col-3"> <a href="http://"> <i class="fa fa-google-plus"></i> </a> </div>
+				</div>
+			</div>
 		</div>
-   		<div class="row">
-   			<div class="col-12 col-md-6"> 1 block</div>
-   			<div class="col-12 col-md-6"> 2 block</div>
+   		<div class="row align-items-center justify-content-md-center messengers">
+   			<div class="col-3"> <a href="https://telegram.me/intaxi_ljubljana" target="_blank"> <i class="fa fa-telegram"></i> Telegram Chat </a></div>
+   			<div class="col-3"> <a href="viber://chat?number=+38631402020"> <i class="fa fa-phone"></i> Viber Chat</a></div>
+   			<div class="col-3"> <a href="whatsapp://send?phone=38631402020"> <i class="fa fa-whatsapp"></i> Whatsapp Chat</a></div>
+   			<div class="col-3"> <a href="https://m.me/intaxi" target="_blank"> <i class="fa fa-comment"></i> Messenger</a></div>
    		</div>
-   		<div class="row">
-   			<div class="col-12"> COPYRIGHT</div>
+   		<div class="row align-items-center justify-content-md-center copyright">
+   			<div class="col-12"> COPYRIGHT inTaxi Group d.o.o All rights reserved!</div>
    		</div>
     </footer>
     
     
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
     <script>
 		$(window).on("scroll touchmove", function () {
 			"use strict";

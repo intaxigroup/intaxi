@@ -24,6 +24,21 @@
     color: #000;
     border: 1px solid #000; }
 
+.back {
+  position: absolute;
+  display: block;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 20px;
+  top: 30px;
+  left: 30px;
+  padding: 10px; }
+  .back:before {
+    content: "\f053";
+    font-family: "FontAwesome"; }
+  .back:hover {
+    color: #aa55cc; }
+
 html, body {
   font-family: "Oswald", sans-serif;
   outline: none; }
@@ -327,6 +342,39 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+  .content.akademija-top {
+    background: url("../img/bg/akademija.jpeg") no-repeat;
+    background-size: cover;
+    height: 60vh; }
+  .content.akademija {
+    height: 40vh; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; }
+  footer .social {
+    text-align: center;
+    background: #1c1c1c;
+    color: #fff;
+    width: 100vw;
+    height: 20vh; }
+    footer .social a {
+      color: #fff;
+      font-size: 3.5vh; }
+  footer .messengers {
+    width: 100vw;
+    text-align: center;
+    padding: 10px 0; }
+  footer .copyright {
+    background: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    width: 100vw; }
 
 /* ALL */
 /* arrows input number */
@@ -479,5 +527,123 @@ button.pause2:before {
 .iphone-video video {
   position: relative;
   margin-bottom: -54px; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5vh 0; }
+
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 85px;
+  backface-visibility: hidden; }
+  .nav__list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    transform: translate(0, -100%);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .nav__list--active {
+      transform: translate(0, 0); }
+  .nav__item {
+    flex: 1;
+    position: relative; }
+  .nav__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    font-size: 24px;
+    background: #2b3033;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .nav__link:hover {
+      background: #272b2e; }
+  @media (max-width: 640px) {
+    .nav {
+      width: 70px; }
+      .nav__list {
+        height: 90vh; } }
+
+.burger {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  top: 10px;
+  left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .burger__patty {
+    position: relative;
+    height: 2px;
+    width: 40px;
+    background: white; }
+    .burger__patty:before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white; }
+    .burger__patty:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white; }
+  .burger__patty, .burger__patty:before, .burger__patty:after {
+    will-change: transform;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .burger--active .burger__patty {
+    transform: rotate(90deg); }
+    .burger--active .burger__patty:before {
+      transform: rotate(-45deg) translate(-7px, -7px) scaleX(0.7); }
+    .burger--active .burger__patty:after {
+      transform: rotate(45deg) translate(-7px, 7px) scaleX(0.7); }
+  @media (max-width: 640px) {
+    .burger {
+      height: 10vh; }
+      .burger__patty {
+        transform: scale(0.8); }
+      .burger--active .burger__patty {
+        transform: scale(0.8) rotate(90deg); } }
+
+.c-blue {
+  color: #5fc7ea; }
+
+.c-red {
+  color: #e68568; }
+
+.c-green {
+  color: #68e6ac; }
+
+.c-yellow {
+  color: #e6d068; }
+
+.b-blue {
+  background: #5fc7ea; }
+
+.b-red {
+  background: #e68568; }
+
+.b-green {
+  background: #68e6ac; }
+
+.b-yellow {
+  background: #e6d068; }
 
 /*# sourceMappingURL=style.css.map */
