@@ -6,6 +6,8 @@
 html, body{
     font-family: $Oswald;
 	outline: none;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 :active, :hover, :visited, :focus {
 	outline: none!important;
@@ -98,7 +100,6 @@ h3{
 	background: rgba(0,0,0, .7);
 	height: 55px;
 	transition: .3s;
-	
 }
 .parallax-window {
 	min-height: 400px;
@@ -106,11 +107,7 @@ h3{
 }
 .content {
     height: $height;
-    /*background: $bg-color;*/
-    
     &.home{
-        /*background: url("../img/bg/home.jpeg") no-repeat;
-        background-size: cover;*/
 		height: 90vh;
         &:before{
             content: "";
@@ -276,8 +273,6 @@ h3{
 		}
 	}
     &.app{
-        /*background: url("../img/bg/app.jpeg") no-repeat;
-		background-size: cover;*/
 		color: $white;
 
 		&.app-home{
@@ -305,8 +300,6 @@ h3{
 		}
     }
 	&.company{
-		background: url("../img/bg/podjetja.jpg") no-repeat;
-		background-size: cover;
 		color: #fff;
 		font-family: $Montserrat;
 		h3{

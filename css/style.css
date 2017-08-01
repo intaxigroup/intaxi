@@ -41,7 +41,9 @@
 
 html, body {
   font-family: "Oswald", sans-serif;
-  outline: none; }
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 :active, :hover, :visited, :focus {
   outline: none !important; }
@@ -123,11 +125,8 @@ h3 {
   background: transparent; }
 
 .content {
-  height: 100vh;
-  /*background: $bg-color;*/ }
+  height: 100vh; }
   .content.home {
-    /*background: url("../img/bg/home.jpeg") no-repeat;
-        background-size: cover;*/
     height: 90vh; }
     .content.home:before {
       content: "";
@@ -262,8 +261,6 @@ h3 {
         .content.payments .pay img[src*="bitcoin"], .content.payments .pay img[src*="mobilepay"] {
           width: 150px; }
   .content.app {
-    /*background: url("../img/bg/app.jpeg") no-repeat;
-		background-size: cover;*/
     color: #fff; }
     .content.app.app-home p {
       font-size: 22px; }
@@ -279,8 +276,6 @@ h3 {
     .content.app .store {
       text-align: center; }
   .content.company {
-    background: url("../img/bg/podjetja.jpg") no-repeat;
-    background-size: cover;
     color: #fff;
     font-family: "Montserrat", sans-serif; }
     .content.company h3 {
