@@ -24,9 +24,9 @@ h3{
 			color: #aa55cc;
 		}
 	}
-	@media (max-width: 640px) {
+	@media (max-width: 600px) and (device-pixel-ratio : 2){
 		font-size: 2em;
-	  }
+	}
 }
 .top{
 	position: absolute;

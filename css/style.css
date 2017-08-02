@@ -58,7 +58,7 @@ h3 {
     color: #fff; }
     h3.purple-title span {
       color: #aa55cc; }
-  @media (max-width: 640px) {
+  @media (max-width: 600px) and (device-pixel-ratio: 2) {
     h3 {
       font-size: 2em; } }
 
