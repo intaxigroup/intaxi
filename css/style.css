@@ -52,7 +52,7 @@ a {
   text-decoration: none !important; }
 
 h3 {
-  font-size: 3.5em;
+  font-size: 56px;
   font-weight: 700; }
   h3.purple-title {
     color: #fff; }
@@ -60,7 +60,7 @@ h3 {
       color: #aa55cc; }
   @media (max-width: 600px) and (device-pixel-ratio: 2) {
     h3 {
-      font-size: 2em; } }
+      font-size: 32px; } }
 
 .top {
   position: absolute;
@@ -147,7 +147,7 @@ h3 {
       .content.home .title .title-text h1.home {
         text-align: left;
         color: #fff;
-        font-size: 4em;
+        font-size: 64px;
         font-weight: 700;
         font-family: "Montserrat", sans-serif; }
         .content.home .title .title-text h1.home company {
