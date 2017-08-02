@@ -16,7 +16,7 @@ a{
 	text-decoration: none!important;
 }
 h3{
-	font-size: 4em;
+	font-size: 3.5em;
 	font-weight: 700;
 	&.purple-title{
 		color: #fff;
@@ -24,6 +24,9 @@ h3{
 			color: #aa55cc;
 		}
 	}
+	@media (max-width: 640px) {
+		font-size: 2em;
+	  }
 }
 .top{
 	position: absolute;
@@ -129,7 +132,7 @@ h3{
                     &.home{
                         text-align: left;
                         color: #fff;
-                        font-size: 70px;
+                        font-size: 4em;
                         font-weight: 700;
                         font-family: $Montserrat;
                         company{
