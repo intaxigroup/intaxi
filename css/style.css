@@ -52,15 +52,11 @@ a {
   text-decoration: none !important; }
 
 h3 {
-  font-size: 56px;
   font-weight: 700; }
   h3.purple-title {
     color: #fff; }
     h3.purple-title span {
       color: #aa55cc; }
-  @media (max-width: 600px) and (device-pixel-ratio: 2) {
-    h3 {
-      font-size: 22px; } }
 
 .top {
   position: absolute;
