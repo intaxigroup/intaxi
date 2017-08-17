@@ -15,3 +15,7 @@ Images:
 Plugins:
  - Slider - Flickity - https://flickity.metafizzy.co
  - Right Menu - http://ettrics.com/lab/demo/vertical-layout-navigation/ 
+ 
+ Services:
+ 
+ - HEX to RGB - https://www.webpagefx.com/web-design/hex-to-rgb/
