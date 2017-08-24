@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,400&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -50,6 +51,42 @@ html, body {
 
 a {
   text-decoration: none !important; }
+
+h6.mb-0:after {
+  display: none; }
+
+a[aria-expanded=true] h6.mb-0:after {
+  content: "\f057";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 15px;
+  display: inline-block;
+  -moz-transform: rotate(90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(90deg);
+  /* Для IE */
+  -webkit-transform: rotate(90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(90deg);
+  /* Для Opera */
+  transform: rotate(90deg);
+  transition: .3s;
+  color: #dc3545; }
+
+a[aria-expanded=false] h6.mb-0:after {
+  content: "\f055";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 15px;
+  display: inline-block;
+  transition: .3s; }
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border: none; }
+
+.bg-header-card {
+  background: #174c71; }
 
 h3 {
   font-weight: 700; }
