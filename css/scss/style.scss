@@ -45,11 +45,11 @@ a[aria-expanded=false]  h6.mb-0:after{
 
 }
 .card{
-	background: rgba(255,255,255, 0.7);
+	background: rgba(255,255,255, 0.7)!important;
 	border: none;
 }
 .bg-header-card{
-	background: $bg-header-card;
+	background: $bg-header-card!important;
 }
 h3{
 
