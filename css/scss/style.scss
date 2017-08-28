@@ -656,4 +656,282 @@ button.pause2:before{
 }  
 /* ------------------------ ---------------------SOCIAL ROW  ----------------------------- */
  
-@import "modules/nav";
+$nav-bg: #2b3033;
+$blue: #5fc7ea;
+$red: #e68568;
+$yellow: #e6d068;
+$green: #68e6ac;
+$ease: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$content-animation: scale(0.7) rotateX(-230deg);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav{
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc (100vh/5);
+	transition: $ease;
+		.logo{
+			position: absolute;
+			display: block;
+			left: 50px;
+			width: 135px;
+			height: 35px;
+			background: url("http://intaxi.si/img/logo-white.png") no-repeat;
+			background-size: cover;
+			transition: $ease;
+			&:hover{
+				background: url("http://intaxi.si/img/logo.png") no-repeat;
+				background-size: cover;
+				height: 2.5em;
+				width: 2.5em;
+			}
+		}
+	&__list{
+		display: flex;
+		flex-flow: row;
+		height: 100px;
+		width: 60%;
+		margin: 0 auto;
+	}
+	&__item {
+		flex: 1;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+			.fa{
+				display: none;
+			}
+	}
+	&__link {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+   
+		text-decoration: none;
+		font-size: 1em;
+		/*background: $nav-bg;*/
+		transition: $ease;
+		padding: 10px;
+		border-radius: 10px;
+			.link__text{
+				color: #fff!important;
+			}
+    
+		&:hover {
+			background: mix(black, $nav-bg, 10);
+		}
+	}
+}
+
+/* NEED UPDATE */
+.fix-nav{
+	position: fixed;
+	top: 0;
+
+	background: rgba(0,0,0, .7);
+	height: 55px;
+	transition: .3s;
+}
+.burger {
+  height: 10vh;
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: $nav-bg;
+  cursor: pointer;
+  transition: $ease;
+  
+  &:hover {
+    background: mix(black, $nav-bg, 10);
+  }
+  
+  &__patty {
+    position: relative;
+    height: 2px;
+    width: 40px;
+    background: white;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+  }
+  
+  &__patty,
+  &__patty:before,
+  &__patty:after {
+    will-change: transform;
+    transition: $ease;
+  }
+  
+  &--active {
+    .burger__patty {
+      transform: rotate(90deg);
+      &:before {
+        transform: rotate(-45deg) translate(-7px,-7px) scaleX(0.7);
+      }
+      
+      &:after {
+        transform: rotate(45deg) translate(-7px,7px) scaleX(0.7);
+      }
+    }
+  }
+  
+}
+@media (max-width: 768px) {
+    .nav {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: 80px;
+      backface-visibility: hidden;
+      display: block;
+      
+      .logo{
+        position: fixed;
+        top: 1em;
+        left: 1em;
+        width: 4em;
+        height: 4em;
+        background: url("http://intaxi.si/img/logo.png") no-repeat;
+        background-size: cover;
+        &:hover{
+          top: 2em;
+          background: url("http://intaxi.si/img/logo-white.png") no-repeat;
+          background-size: cover;
+          width: 135px;
+          height: 35px;
+        }
+      }
+      &__list {
+        display: flex;
+        flex-flow: column wrap;
+        height: 90vh;
+        width: 80px;
+        transform: translate(0, -100%);
+        transition: $ease;
+
+        &--active {
+          transform: translate(0, 0);
+        }
+      }
+  
+      &__item {
+        flex: 1;
+        position: relative;
+        .fa{
+          display: block;
+        }
+      }
+
+      &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        font-size: 1.5em;
+        background: $nav-bg;
+        transition: $ease;
+        
+        border-radius: 0px;
+        .link__text{
+          display: none;
+        }
+        &:hover {
+          background: mix(black, $nav-bg, 10);
+        }
+      }
+    }
+  
+  .burger{
+    display: flex;
+    height: 10vh;
+    width: 80px;
+    
+    &__patty {
+      transform: scale(0.8);
+    }
+    
+    &--active {
+      .burger__patty {
+        transform: scale(0.8) rotate(90deg);
+      }
+    }
+  }
+    
+}
+
+.c-blue {
+  color: $blue;
+}
+
+.c-red {
+  color: $red;
+}
+
+.c-green {
+  color: $green;
+}
+
+.c-yellow {
+  color: $yellow;
+}
+
+.b-blue {
+  background: $blue;
+}
+
+.b-red {
+  background: $red;
+}
+
+.b-green {
+  background: $green;
+}
+
+.b-yellow {
+  background: $yellow;
+}
