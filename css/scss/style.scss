@@ -30,7 +30,7 @@ a[aria-expanded=true]  h6.mb-0:after{
     -o-transform: rotate(90deg); /* Для Opera */
     transform: rotate(90deg);
 	transition: .3s;
-	color: #dc3545;
+	color: #dc3545; 
 	
 
 }
@@ -58,10 +58,9 @@ h3{
 		color: #fff;
 		font-size: 30px;
 		span{
-			color: #aa55cc;
+			color: #aa55cc; 
 		}
 	}
-
 }
 .top{
 	position: absolute;
@@ -72,7 +71,7 @@ h3{
 	z-index: 999;
 	height: $height/5;
 	width: $width;
-	transition: .3s;
+	transition: .3s; 
 	
 	a{
 		color: $bg-color;
