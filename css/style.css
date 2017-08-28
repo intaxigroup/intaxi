@@ -96,67 +96,83 @@ h3 {
     h3.purple-title span {
       color: #aa55cc; }
 
-.top {
-  position: absolute;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  z-index: 999;
-  height: 20vh;
-  width: 100vw;
-  transition: .3s; }
-  .top a {
-    color: #fff;
-    font-size: 20px;
-    margin: 0 10px;
-    width: 120px;
-    text-align: center;
-    padding: 10px; }
-    .top a:hover {
-      background: #aa55ce;
-      border-radius: 10px; }
-    .top a.logo {
-      position: absolute;
-      z-index: 999;
-      background: url("../img/logo-white.png") no-repeat;
-      background-size: cover;
-      left: 50px;
-      width: 135px;
-      height: 35px; }
-  .top .phone-all {
-    position: absolute;
-    right: 30px; }
-    .top .phone-all a.whatsapp {
-      background: url("../img/whatsapp.png") no-repeat;
-      display: inline-block;
-      background-size: 25px 25px;
-      width: 25px;
-      height: 25px;
-      position: relative;
-      top: 4px; }
-    .top .phone-all a.viber {
-      background: url("../img/viber.png") no-repeat;
-      display: inline-block;
-      background-size: 25px 25px;
-      width: 25px;
-      height: 25px;
-      position: relative;
-      top: 4px; }
-    .top .phone-all a i {
-      font-size: 25px;
-      color: #aa55cc; }
-    .top .phone-all a:hover i {
-      color: #fff; }
+/*
+.top{
+	position: absolute;
+	display: flex!important;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	z-index: 999;
+	height: $height/5;
+	width: $width;
+	transition: .3s; 
+	
+	a{
+		color: $bg-color;
+		font-size: 20px;
+		margin: 0 10px;
+		width: 120px;
+		text-align: center;
+		padding: 10px;
+		&:hover{
+			background: $color;
+			border-radius: 10px;
+		}
+		&.logo{
+			position: absolute;
+			z-index: 999;
+			background: url("../img/logo-white.png") no-repeat;
+			background-size: cover;
+			left: 50px;
+			width: 135px;
+			height: 35px;
 
-.fix-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  height: 55px;
-  transition: .3s; }
+		}
+	}
+	.phone-all{
+		position: absolute;
+		right: 30px;
 
+		a{
+			&.whatsapp{
+				background: url("../img/whatsapp.png") no-repeat;
+				display: inline-block;
+				background-size: 25px 25px;
+				width: 25px;
+				height: 25px;
+				position: relative;
+				top: 4px;
+			}
+			&.viber{
+				background: url("../img/viber.png") no-repeat;
+				display: inline-block;
+				background-size: 25px 25px;
+				width: 25px;
+				height: 25px;
+				position: relative;
+				top: 4px;
+			}
+			i{
+				font-size: 25px;
+				color: #aa55cc;
+			}
+			&:hover{
+				i{
+					color: $white;
+				}
+			}
+		}		
+	}
+}
+.fix-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, .7);
+	height: 55px;
+	transition: .3s;
+}*/
 .parallax-window {
   min-height: 400px;
   background: transparent; }
@@ -295,7 +311,7 @@ h3 {
       .content.payments .pay img {
         width: 100px;
         height: auto; }
-        .content.payments .pay img[src*="bitcoin"], .content.payments .pay img[src*="mobilepay"] {
+        .content.payments .pay img[src*="bitcoin"] {
           width: 150px; }
   .content.app {
     color: #fff; }
@@ -613,7 +629,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc 20vh;
+  height: 20vh;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .nav .logo {
     position: absolute;
@@ -657,7 +673,8 @@ ul {
     .nav__link .link__text {
       color: #fff !important; }
     .nav__link:hover {
-      background: #272b2e; }
+      /*background: mix(black, $nav-bg, 10);*/
+      background: #aa55ce; }
 
 /* NEED UPDATE */
 .fix-nav {
