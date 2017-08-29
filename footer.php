@@ -1,3 +1,4 @@
+	</div>
     <footer>
     	<div class="row" hidden>
     		<div class="col-12">
