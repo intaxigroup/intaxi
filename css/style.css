@@ -677,6 +677,10 @@ ul {
       background: #aa55ce; }
 
 /* NEED UPDATE */
+#accordionAirport .fa {
+  width: 25px;
+  text-align: center; }
+
 .fix-nav {
   position: fixed;
   top: 0;
