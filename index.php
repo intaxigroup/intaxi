@@ -99,7 +99,7 @@
         	<div class="col-8">
         		<h3>Enostavno in z fiksno ceno preko inTaxi Aplikacije</h3>
         		<p> Čeprav na vsa naša Online naročila zagotavljamo fiksno ceno taksi prevoz ov, vam predlagamo še bolj enostaven način in to prek naše super aplikacije! Naloži in se prepričaj, da bolj enostavno ne gre ;)</p>
-        		<a href="intaxi-aplikacija.html" class="btn btn-read-more-dark"> PREBERI VEČ <i class="fa fa-arrow-right"></i></a>
+        		<a href="intaxi-aplikacija" class="btn btn-read-more-dark"> PREBERI VEČ <i class="fa fa-arrow-right"></i></a>
         	</div>
 
         </div>
@@ -132,7 +132,7 @@
 					<h3>Najboljši sodelujejo z najboljšimi</h3>
         	</div>
         	<div class="col-12 col-md-6">
-        		<a href="intaxi-za-podjetja.html" class="btn btn-read-more-light"> PREBERI VEČ <i class="fa fa-arrow-right"></i></a>
+        		<a href="intaxi-za-podjetja" class="btn btn-read-more-light"> PREBERI VEČ <i class="fa fa-arrow-right"></i></a>
         	</div>
         </div>
     </div>

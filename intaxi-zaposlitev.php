@@ -66,7 +66,7 @@
         					<div class="col-">
         						<p>NUDIMO:</p>
         						<ol>
-        							<li>Program prakse ter teoriji v <a href="/intaxi-akademija.html">INTAXI AKADEMIJI</a></li>
+        							<li>Program prakse ter teoriji v <a href="/intaxi-akademija">INTAXI AKADEMIJI</a></li>
         								<ul>
         									<li>Uvajanje v inTaxi sistemu</li>
         									<li>Vodenje pri opravljanju turističnega izpita</li>
