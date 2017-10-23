@@ -34,5 +34,8 @@
 			<li class="nav__item">
 				<a href="#company" class="nav__link c-green"><span class="link__text"> ZA PODJETJA</span><i class="fa fa-paper-plane"></i></a>
 			</li>
+			<li class="nav__item">
+				<a href="#price" class="nav__link c-green"><span class="link__text"> CENIK</span><i class="fa fa-money"></i></a>
+			</li>
 		</ul>
 	</nav>
