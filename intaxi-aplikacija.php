@@ -45,7 +45,7 @@
         				<h3 class="purple-title"> <span>FIKSNA CENA</span><br /> BREZ PROBLEMA!</h3>
         			</div>
         			<div class="col-12 app-text">
-        				<strong>Bi se peljali po fiksni ceni z taksi v Ljubljani? <a href="index.html">NAROČI ONLINE </a> ali preko Aplikacije!</strong>
+        				<strong>Bi se peljali po fiksni ceni z taksi v Ljubljani? <a href="index">NAROČI ONLINE </a> ali preko Aplikacije!</strong>
         				<ol>
         					<li>Aplikacija najprej zahteva Tvojo registracijo!</li>
         					<ul><li>Zaupaj nam svojo telefonsko številko in elektronski naslov.</li></ul>
