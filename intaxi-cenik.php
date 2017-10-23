@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title> InTaxi na Letališče</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container-fluid">
+<?php include_once 'header.php' ?>
+       
         <div class="row align-items-center  parallax-window content" id="" data-parallax="scroll" data-image-src="img/bg/app.jpeg">
 			<div class="col">
 				<div id="accordionAirport" role="tablist">
@@ -23,7 +14,7 @@
 						</a>
 						<div id="collapseLjubljana" class="collapse" role="tabpanel" aria-labelledby="headingLjubljana" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ 20 min. <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/Ay8JDkUr8w32"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 15 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -39,7 +30,7 @@
 						</a>
 						<div id="collapseDunaj" class="collapse" role="tabpanel" aria-labelledby="headingDunaj" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/ynTdvRnXFHK2"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/ynTdvRnXFHK2"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 250 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -55,7 +46,7 @@
 						</a>
 						<div id="collapseZagreb" class="collapse" role="tabpanel" aria-labelledby="headingZagreb" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/EG1fVyUHtbT2"> GOOGLE MAPS</a></strong><br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/EG1fVyUHtbT2"> GOOGLE MAPS</a></strong><br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 95 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -71,7 +62,7 @@
 						</a>
 						<div id="collapseBudapest" class="collapse" role="tabpanel" aria-labelledby="headingBudapest" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/1nJxULNnYbG2"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/1nJxULNnYbG2"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 290 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -87,7 +78,7 @@
 						</a>
 						<div id="collapseGraz" class="collapse" role="tabpanel" aria-labelledby="headingGraz" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/XqGALHngWq42"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/XqGALHngWq42"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 140 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -103,7 +94,7 @@
 						</a>
 						<div id="collapseMarcopolo" class="collapse" role="tabpanel" aria-labelledby="headingMarcopolo" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/ZtTimYsNPfE2"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/ZtTimYsNPfE2"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 170 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -119,7 +110,7 @@
 						</a>
 						<div id="collapseTreviso" class="collapse" role="tabpanel" aria-labelledby="headingTreviso" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/7axgUq5x1kQ2"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/7axgUq5x1kQ2"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 170 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -135,7 +126,7 @@
 						</a>
 						<div id="collapseKlagenfurt" class="collapse" role="tabpanel" aria-labelledby="headingKlagenfurt" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/aDmEmuz4rSU2"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/aDmEmuz4rSU2"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 75 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -151,7 +142,7 @@
 						</a>
 						<div id="collapseMunchen" class="collapse" role="tabpanel" aria-labelledby="headingMunchen" data-parent="#accordionAirport">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/rhegRMzLLcR2"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/rhegRMzLLcR2"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 300 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -175,7 +166,7 @@
 						</a>
 						<div id="collapseCity1" class="collapse" role="tabpanel" aria-labelledby="headingCity1" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong>EDIT</strong> min. <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong>EDIT</strong> min. <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 75 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -191,7 +182,7 @@
 						</a>
 						<div id="collapseCity2" class="collapse" role="tabpanel" aria-labelledby="headingCity2" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 58 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -207,7 +198,7 @@
 						</a>
 						<div id="collapseCity3" class="collapse" role="tabpanel" aria-labelledby="headingCity3" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 11 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -223,7 +214,7 @@
 						</a>
 						<div id="collapseCity4" class="collapse" role="tabpanel" aria-labelledby="headingCity4" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 12 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -239,7 +230,7 @@
 						</a>
 						<div id="collapseCity5" class="collapse" role="tabpanel" aria-labelledby="headingCity5" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 80 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -255,7 +246,7 @@
 						</a>
 						<div id="collapseCity6" class="collapse" role="tabpanel" aria-labelledby="headingCity6" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 17 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -271,7 +262,7 @@
 						</a>
 						<div id="collapseCity7" class="collapse" role="tabpanel" aria-labelledby="headingCity7" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 75 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -289,7 +280,7 @@
 						</a>
 						<div id="collapseCity8" class="collapse" role="tabpanel" aria-labelledby="headingCity8" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 24 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -305,7 +296,7 @@
 						</a>
 						<div id="collapseCity9" class="collapse" role="tabpanel" aria-labelledby="headingCity9" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 65 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -321,7 +312,7 @@
 						</a>
 						<div id="collapseCity10" class="collapse" role="tabpanel" aria-labelledby="headingCity10" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 27 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -337,7 +328,7 @@
 						</a>
 						<div id="collapseCity11" class="collapse" role="tabpanel" aria-labelledby="headingCity11" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 22 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -353,7 +344,7 @@
 						</a>
 						<div id="collapseCity12" class="collapse" role="tabpanel" aria-labelledby="headingCity12" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 90 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -369,7 +360,7 @@
 						</a>
 						<div id="collapseCity13" class="collapse" role="tabpanel" aria-labelledby="headingCity13" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 12 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -385,7 +376,7 @@
 						</a>
 						<div id="collapseCity14" class="collapse" role="tabpanel" aria-labelledby="headingCity14" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 75 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -403,7 +394,7 @@
 						</a>
 						<div id="collapseCity15" class="collapse" role="tabpanel" aria-labelledby="headingCity15" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 65 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -419,7 +410,7 @@
 						</a>
 						<div id="collapseCity16" class="collapse" role="tabpanel" aria-labelledby="headingCity16" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 90 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -435,7 +426,7 @@
 						</a>
 						<div id="collapseCity17" class="collapse" role="tabpanel" aria-labelledby="headingCity17" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 42 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -451,7 +442,7 @@
 						</a>
 						<div id="collapseCity18" class="collapse" role="tabpanel" aria-labelledby="headingCity18" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 18 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -467,7 +458,7 @@
 						</a>
 						<div id="collapseCity19" class="collapse" role="tabpanel" aria-labelledby="headingCity19" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 18 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -483,7 +474,7 @@
 						</a>
 						<div id="collapseCity20" class="collapse" role="tabpanel" aria-labelledby="headingCity20" data-parent="#accordionCity">
 						  <div class="card-body">
-							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: ~ <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
+							<i class="fa fa-clock-o" aria-hidden="true"></i> Čas vožnje: <strong> <a href="https://goo.gl/maps/"> GOOGLE MAPS</a></strong> <br />
 							<i class="fa fa-money" aria-hidden="true"></i> Cena vožnje: od 16 <i class="fa fa-eur" aria-hidden="true"></i><br />
 							<i class="fa fa-info" aria-hidden="true"></i> Plačilo vožnje: Gotovina, Credit Card, Moneta, Bitcoin
 						  </div>
@@ -494,13 +485,4 @@
 				</div>
 			</div>
         </div>
-    </div>
-    
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.js"></script>
-</body>
-</html>
+    <?php include_once 'footer.php' ?>
