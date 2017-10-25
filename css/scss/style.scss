@@ -608,6 +608,11 @@ button.pause2:before{
 	position: relative;
 	margin-bottom: -54px;
 }
+@media (max-width: 767px) {
+	.video{
+		display: none;
+	}
+}
 /* ------------------------ ---------------------SOCIAL ROW  ----------------------------- */
 
 .social{

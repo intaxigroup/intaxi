@@ -28,7 +28,7 @@
 		</div>
        <a href="#" class="back"> BACK</a>
         <div class="row align-items-center justify-content-md-center parallax-window content app app-home" id="app" data-parallax="scroll" data-image-src="img/bg/app.jpeg">
-        	<div class="col-12 col-md-6 video hidden-md-down">
+        	<div class="col-12 col-md-6 video">
         		<div class="iphone-video">
 					<p>
 						<video id="iphone-video"  width="282" height="500" data-video="0">
