@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title> InTaxi Aplikacija</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<style>
+<?php include_once 'header.php' ?>
 
-    </style>
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="row align-items-center justify-content-md-center content home" id="home" hidden>
-            <div class="col-12">
-                <div class="row align-items-center justify-content-md-center">
-                   <nav class="top" id="nav">
-                   		<a href="" class="logo"></a>
-						<a href="#home"> BOOK NOW</a>
-						<a href="#payments"> PLAČILA</a>
-						<a href="#app"> APLIKACIJA</a>
-						<a href="#company"> ZA PODJETJA</a>
-						<a href="#work"> ZAPOSLITEV</a>
-					</nav>
-                </div>
-            </div>
-		</div>
        <a href="#" class="back"> BACK</a>
         <div class="row align-items-center justify-content-md-center parallax-window content app app-home" id="app" data-parallax="scroll" data-image-src="img/bg/app.jpeg">
         	<div class="col-12 col-md-6 video">
