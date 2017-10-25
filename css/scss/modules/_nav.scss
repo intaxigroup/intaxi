@@ -166,6 +166,10 @@ ul {
       width: 80px;
       backface-visibility: hidden;
       display: block;
+		
+	 &--active {
+          background: yellow;
+        }
       
       .logo{
         position: fixed;
