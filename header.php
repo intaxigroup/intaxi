@@ -19,7 +19,7 @@
 		<div class="burger">
 			<div class="burger__patty"></div>
 		</div>
-		<a href="#" class="logo"></a>
+		<a href="/#home" class="logo"></a>
 
 		<ul class="nav__list">
 			<li class="nav__item">
@@ -35,7 +35,7 @@
 				<a href="/#company" class="nav__link c-green"><span class="link__text"> ZA PODJETJA</span><i class="fa fa-info-circle"></i></a>
 			</li>
 			<li class="nav__item">
-				<a href="/intaxi-cenik" class="nav__link c-blue"><span clax1ss="link__text"> CENIK</span><i class="fa fa-money"></i></a>
+				<a href="/intaxi-cenik" class="nav__link c-blue"><span class="link__text"> CENIK </span><i class="fa fa-money"></i></a>
 			</li>
 		</ul>
 	</nav>
