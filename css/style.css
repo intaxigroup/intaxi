@@ -632,7 +632,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: calc 20vh;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .nav .logo {
     position: absolute;
@@ -677,17 +677,13 @@ ul {
     .nav__link .link__text {
       color: #fff !important; }
     .nav__link:hover {
-      /*background: mix(black, $nav-bg, 10);*/
-      background: #aa55ce; }
+      background: #272b2e; }
 
 /* NEED UPDATE */
-#accordionAirport .fa {
-  width: 25px;
-  text-align: center; }
-
 .fix-nav {
   position: fixed;
   top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.7);
   height: 55px;
   transition: .3s; }
@@ -751,13 +747,14 @@ ul {
       width: 4em;
       height: 4em;
       background: url("http://intaxi.si/img/logo.png") no-repeat;
-      background-size: cover; }
-      .nav .logo:hover {
-        top: 2em;
-        background: url("http://intaxi.si/img/logo-white.png") no-repeat;
-        background-size: cover;
-        width: 135px;
-        height: 35px; }
+      background-size: cover;
+      /*&:hover{
+          top: 2em;
+          background: url("http://intaxi.si/img/logo-white.png") no-repeat;
+          background-size: cover;
+          width: 135px;
+          height: 35px;
+        }*/ }
     .nav__list {
       display: flex;
       flex-flow: column wrap;
