@@ -740,6 +740,8 @@ ul {
     width: 80px;
     backface-visibility: hidden;
     display: block; }
+    .nav--active {
+      background: yellow; }
     .nav .logo {
       position: fixed;
       top: 1em;
