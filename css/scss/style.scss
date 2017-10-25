@@ -2,7 +2,10 @@
 @import "modules/variables";
 @import "modules/colors";
 @import "modules/buttons";
-   
+
+*{
+	transition: all .3s;
+}
 html, body{
     font-family: $Oswald;
 	outline: none;
@@ -697,12 +700,12 @@ ul {
 			background: url("http://intaxi.si/img/logo-white.png") no-repeat;
 			background-size: cover;
 			transition: $ease;
-			&:hover{
+			/*&:hover{
 				background: url("http://intaxi.si/img/logo.png") no-repeat;
 				background-size: cover;
 				height: 2.5em;
 				width: 2.5em;
-			}
+			} */
 		}
 	&__list{
 		display: flex;
