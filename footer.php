@@ -17,7 +17,7 @@
 		</div>
    		<div class="row align-items-center justify-content-md-center messengers">
    			<div class="col-3 messengers-telegram"> <a href="https://telegram.me/intaxi_ljubljana" target="_blank"> <i class="fa fa-telegram"></i> Telegram </a></div>
-   			<div class="col-3 messengers-viber"> <a href="viber://chat?number=+38631402020"> <i class="fa fa-phone"></i>  Viber  </a></div>
+   			<div class="col-3 messengers-viber"> <a href="viber://chat?number=+38631402020"> <i class="fa fa-phone"></i>  &nbsp;Viber&nbsp;  </a></div>
    			<div class="col-3 messengers-whatsapp"> <a href="whatsapp://send?phone=38631402020"> <i class="fa fa-whatsapp"></i> Whatsapp </a></div>
    			<div class="col-3 messengers-messenger"> <a href="https://m.me/intaxi" target="_blank"> <i class="fa fa-comment"></i> Messenger</a></div>
    		</div>
@@ -36,5 +36,24 @@
 	<script src="js/main.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script>
+		var myVideo = document.getElementById("iphone-video"); 
+		function playPause() { 
+			if (myVideo.paused) 
+				myVideo.play(); 
+			else 
+				myVideo.pause(); 
+		}
+		function videoIphone() {
+			this.classList.toggle('play');
+			this.classList.toggle('pause');
+		}
+		document.querySelector('#video-iphone').addEventListener('click', videoIphone);
+		function videoClick() {
+			this.classList.toggle('play2');
+			this.classList.toggle('pause2');
+		}
+		document.querySelector('#video-click').addEventListener('click', videoClick);
+	</script>
 </body>
 </html>
