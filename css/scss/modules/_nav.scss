@@ -39,12 +39,12 @@ ul {
 			background: url("http://intaxi.si/img/logo-white.png") no-repeat;
 			background-size: cover;
 			transition: $ease;
-			&:hover{
+			/*&:hover{
 				background: url("http://intaxi.si/img/logo.png") no-repeat;
 				background-size: cover;
 				height: 2.5em;
 				width: 2.5em;
-			}
+			} */
 		}
 	&__list{
 		display: flex;
@@ -89,7 +89,7 @@ ul {
 .fix-nav{
 	position: fixed;
 	top: 0;
-
+	left: 0;
 	background: rgba(0,0,0, .7);
 	height: 55px;
 	transition: .3s;
@@ -175,13 +175,13 @@ ul {
         height: 4em;
         background: url("http://intaxi.si/img/logo.png") no-repeat;
         background-size: cover;
-        &:hover{
+        /*&:hover{
           top: 2em;
           background: url("http://intaxi.si/img/logo-white.png") no-repeat;
           background-size: cover;
           width: 135px;
           height: 35px;
-        }
+        }*/
       }
       &__list {
         display: flex;
