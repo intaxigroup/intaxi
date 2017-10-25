@@ -232,8 +232,8 @@ ul {
     }
 	.fix-nav{
 		position: fixed;
-		right: 0;
-	}
+		right: 0!important;
+	} 
   .burger{
     display: flex;
     height: 10vh;
