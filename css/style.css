@@ -40,6 +40,9 @@
   .back:hover {
     color: #aa55cc; }
 
+* {
+  transition: all .3s; }
+
 html, body {
   font-family: "Oswald", sans-serif;
   outline: none;
@@ -639,12 +642,13 @@ ul {
     height: 35px;
     background: url("http://intaxi.si/img/logo-white.png") no-repeat;
     background-size: cover;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-    .nav .logo:hover {
-      background: url("http://intaxi.si/img/logo.png") no-repeat;
-      background-size: cover;
-      height: 2.5em;
-      width: 2.5em; }
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /*&:hover{
+				background: url("http://intaxi.si/img/logo.png") no-repeat;
+				background-size: cover;
+				height: 2.5em;
+				width: 2.5em;
+			} */ }
   .nav__list {
     display: flex;
     flex-flow: row;
