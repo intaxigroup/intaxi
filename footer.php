@@ -17,7 +17,7 @@
 		</div>
    		<div class="row align-items-center justify-content-md-center messengers">
    			<div class="col-3 messengers-telegram"> <a href="https://telegram.me/intaxi_ljubljana" target="_blank"> <i class="fa fa-telegram"></i> Telegram </a></div>
-   			<div class="col-3 messengers-viber"> <a href="viber://chat?number=+38631402020"> <i class="fa fa-phone"></i>  &nbsp;Viber&nbsp;  </a></div>
+   			<div class="col-3 messengers-viber"> <a href="viber://chat?number=+38631402020"> <i class="fa fa-phone"></i>  &nbsp; &nbsp; &nbsp;Viber  </a></div>
    			<div class="col-3 messengers-whatsapp"> <a href="whatsapp://send?phone=38631402020"> <i class="fa fa-whatsapp"></i> Whatsapp </a></div>
    			<div class="col-3 messengers-messenger"> <a href="https://m.me/intaxi" target="_blank"> <i class="fa fa-comment"></i> Messenger</a></div>
    		</div>
