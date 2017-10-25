@@ -167,10 +167,9 @@ ul {
       backface-visibility: hidden;
       display: block;
 		
-	 &--active {
+      &--active {
           background: yellow;
         }
-      
       .logo{
         position: fixed;
         top: 1em;
