@@ -1,7 +1,12 @@
 $(window).on("scroll touchmove", function () {
-			"use strict";
-			$('#nav').toggleClass('fix-nav', $(document).scrollTop() > 35);
-		});
+	"use strict";
+	$('#nav').toggleClass('fix-nav', $(document).scrollTop() > 35);
+});
+
+$('a.back').click(function(){
+	parent.history.back();
+	return false;
+});
 
 var menu = document.querySelector('.nav__list');
 var burger = document.querySelector('.burger');
@@ -56,5 +61,23 @@ var init = function() {
   window.addEventListener('load', scrollFx, false);
   $('a[href^="#"]').on('click',scrolly);
 };
+
+		var myVideo = document.getElementById("iphone-video"); 
+		function playPause() { 
+			if (myVideo.paused) 
+				myVideo.play(); 
+			else 
+				myVideo.pause(); 
+		}
+		function videoIphone() {
+			this.classList.toggle('play');
+			this.classList.toggle('pause');
+		}
+		document.querySelector('#video-iphone').addEventListener('click', videoIphone);
+		function videoClick() {
+			this.classList.toggle('play2');
+			this.classList.toggle('pause2');
+		}
+		document.querySelector('#video-click').addEventListener('click', videoClick);
 
 doc.on('ready', init);

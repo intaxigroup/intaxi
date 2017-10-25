@@ -1,6 +1,6 @@
 <?php include_once 'header.php' ?>
 
-       <a href="#" class="back"> BACK</a>
+       <a href="#" class="back" hidden> BACK</a>
         <div class="row align-items-center justify-content-md-center parallax-window content app app-home" id="app" data-parallax="scroll" data-image-src="img/bg/app.jpeg">
         	<div class="col-12 col-md-6 video">
         		<div class="iphone-video">
@@ -53,59 +53,4 @@
         		NIMAŠ ČASA ZA NALAGANJE? BOOK NOW
         	</div>
         </div>
-    </div>
-    <footer hidden>
-		<div class="row">
-			<div class="col-12"> SOCIAL </div>
-		</div>
-   		<div class="row">
-   			<div class="col-12 col-md-6"> 1 block</div>
-   			<div class="col-12 col-md-6"> 2 block</div>
-   		</div>
-   		<div class="row">
-   			<div class="col-12"> COPYRIGHT</div>
-   		</div>
-    </footer>
-    
-    
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.js"></script>
-    <script>
-		$(document).ready(function(){
-			$('a.back').click(function(){
-				parent.history.back();
-				return false;
-			});
-		});
-		$(window).on("scroll touchmove", function () {
-			"use strict";
-			$('#nav').toggleClass('fix-nav', $(document).scrollTop() > 35);
-		});
-		
-		var myVideo = document.getElementById("iphone-video"); 
-
-		function playPause() { 
-			if (myVideo.paused) 
-				myVideo.play(); 
-			else 
-				myVideo.pause(); 
-		}
-
-		function videoIphone() {
-			this.classList.toggle('play');
-			this.classList.toggle('pause');
-		}
-		document.querySelector('#video-iphone').addEventListener('click', videoIphone);
-
-		function videoClick() {
-			this.classList.toggle('play2');
-			this.classList.toggle('pause2');
-		}
-		document.querySelector('#video-click').addEventListener('click', videoClick);
-	</script>
-</body>
-</html>
+    <?php include_once 'footer.php' ?>
