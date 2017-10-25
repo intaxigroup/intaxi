@@ -4,7 +4,7 @@ $(window).on("scroll touchmove", function () {
 		});
 
 var menu = document.querySelector('.nav__list');
-var burger = document.querySelector('.burger');
+//var burger = document.querySelector('.burger');
 var nav = document.querySelector('.nav');
 var doc = $(document);
 var l = $('.scrolly');
@@ -12,9 +12,10 @@ var panel = $('.panel');
 var vh = $(window).height();
 
 var openMenu = function() {
-  burger.classList.toggle('burger--active');
+	nav.classList.toggle('nav--active');
+  //burger.classList.toggle('burger--active');
   menu.classList.toggle('nav__list--active');
-  nav.classList.toggle('nav--active');
+  
 };
 
 // reveal content of first panel by default
@@ -53,7 +54,7 @@ var scrolly = function(e) {
 }
 
 var init = function() {
-  burger.addEventListener('click', openMenu, false);
+  nav.addEventListener('click', openMenu, false);
   window.addEventListener('scroll', scrollFx, false);
   window.addEventListener('load', scrollFx, false);
   $('a[href^="#"]').on('click',scrolly);
