@@ -735,8 +735,8 @@ ul {
   .nav {
     position: fixed;
     z-index: 1;
-    top: 1em !important;
-    right: 1em !important;
+    top: 0;
+    right: 0;
     width: 80px;
     backface-visibility: hidden;
     display: block; }
@@ -760,7 +760,7 @@ ul {
       flex-flow: column wrap;
       height: 90vh;
       width: 80px;
-      transform: translate(0, -100%);
+      transform: translate(80px, 0);
       transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
       .nav__list--active {
         transform: translate(0, 0); }
