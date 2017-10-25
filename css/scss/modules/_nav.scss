@@ -145,13 +145,13 @@ ul {
   
   &--active {
     .burger__patty {
-      transform: rotate(90deg);
+      transform: rotate(0deg);
       &:before {
-        transform: rotate(-45deg) translate(-7px,-7px) scaleX(0.7);
+        transform: rotate(25deg) translate(7px,0px) scaleX(0.8);
       }
       
       &:after {
-        transform: rotate(45deg) translate(-7px,7px) scaleX(0.7);
+        transform: rotate(-25deg) translate(7px,0px) scaleX(0.8);
       }
     }
   }
@@ -230,19 +230,22 @@ ul {
         }
       }
     }
-  
+	.fix-nav{
+		position: fixed;
+		right: 0;
+	}
   .burger{
     display: flex;
     height: 10vh;
     width: 80px;
     
-    &__patty {
+    /*&__patty {
       transform: scale(0.8);
     }
-    
+    */
     &--active {
       .burger__patty {
-        transform: scale(0.8) rotate(90deg);
+        background: transparent;
       }
     }
   }
