@@ -62,22 +62,5 @@ var init = function() {
   $('a[href^="#"]').on('click',scrolly);
 };
 
-		var myVideo = document.getElementById("iphone-video"); 
-		function playPause() { 
-			if (myVideo.paused) 
-				myVideo.play(); 
-			else 
-				myVideo.pause(); 
-		}
-		function videoIphone() {
-			this.classList.toggle('play');
-			this.classList.toggle('pause');
-		}
-		document.querySelector('#video-iphone').addEventListener('click', videoIphone);
-		function videoClick() {
-			this.classList.toggle('play2');
-			this.classList.toggle('pause2');
-		}
-		document.querySelector('#video-click').addEventListener('click', videoClick);
 
 doc.on('ready', init);
