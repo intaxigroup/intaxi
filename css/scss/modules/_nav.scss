@@ -86,14 +86,7 @@ ul {
 }
 
 /* NEED UPDATE */
-.fix-nav{
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0, .7);
-	height: 55px;
-	transition: .3s;
-}
+
 .burger {
   height: 10vh;
   position: relative;
@@ -157,7 +150,7 @@ ul {
   }
   
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .nav {
       position: fixed;
       z-index: 1;
@@ -230,10 +223,6 @@ ul {
         }
       }
     }
-	.fix-nav{
-		position: fixed;
-		right: 0!important;
-	} 
   .burger{
     display: flex;
     height: 10vh;
@@ -250,6 +239,16 @@ ul {
     }
   }
     
+}
+@media (min-width: 768px) {
+	.fix-nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0, .7);
+		height: 55px;
+		transition: .3s;
+	}
 }
 
 .c-blue {
