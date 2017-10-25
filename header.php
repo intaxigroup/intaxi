@@ -23,19 +23,19 @@
 
 		<ul class="nav__list">
 			<li class="nav__item">
-				<a href="#home" class="nav__link c-blue"><span class="link__text">BOOK NOW</span><i class="fa fa-camera-retro"></i></a>
+				<a href="/#home" class="nav__link c-blue"><span class="link__text">BOOK NOW</span><i class="fa fa-camera-retro"></i></a>
 			</li>
 			<li class="nav__item">
-				<a href="intaxi-akademija" class="nav__link c-yellow scrolly"><span class="link__text">AKADEMIJA</span><i class="fa fa-bolt"></i></a>
+				<a href="/intaxi-akademija" class="nav__link c-yellow scrolly"><span class="link__text">AKADEMIJA</span><i class="fa fa-bolt"></i></a>
 			</li>
 			<li class="nav__item">
-				<a href="#app" class="nav__link c-red"><span class="link__text"> APLIKACIJA</span><i class="fa fa-music"></i></a>
+				<a href="/#app" class="nav__link c-red"><span class="link__text"> APLIKACIJA</span><i class="fa fa-music"></i></a>
 			</li>
 			<li class="nav__item">
-				<a href="#company" class="nav__link c-green"><span class="link__text"> ZA PODJETJA</span><i class="fa fa-paper-plane"></i></a>
+				<a href="/#company" class="nav__link c-green"><span class="link__text"> ZA PODJETJA</span><i class="fa fa-paper-plane"></i></a>
 			</li>
 			<li class="nav__item">
-				<a href="intaxi-cenik" class="nav__link c-green"><span class="link__text"> CENIK</span><i class="fa fa-money"></i></a>
+				<a href="/intaxi-cenik" class="nav__link c-green"><span class="link__text"> CENIK</span><i class="fa fa-money"></i></a>
 			</li>
 		</ul>
 	</nav>
